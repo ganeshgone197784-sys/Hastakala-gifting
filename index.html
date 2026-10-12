@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hastakala — Tradition in Every Piece</title>
+<meta name="description" content="Hastakala: festive essentials, chocolates, diyas, torans, flowers, gift hampers and heartfelt personalised gifts. Tradition in Every Piece.">
+<meta name="theme-color" content="#24140F">
+
+<!-- Favicon: compact lotus + flame mark (inline, no file needed) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324140F'/%3E%3Cg transform='translate(6 6) scale(.81)'%3E%3Cpath fill='%239E7332' d='M31 59C17 57.5 8 49.5 5.5 37C17.5 38 26.5 44.5 31 59ZM33 59C47 57.5 56 49.5 58.5 37C46.5 38 37.5 44.5 33 59Z'/%3E%3Cpath fill='%23C99A4A' d='M31 58C22.5 54 18 47 18.5 38C26 40.5 30 47.5 31 58ZM33 58C41.5 54 46 47 45.5 38C38 40.5 34 47.5 33 58Z'/%3E%3Cpath fill='%23E8C98A' d='M32 57C27 51 25.5 44 27.5 37.5C29 35.5 30.5 34.5 32 34C33.5 34.5 35 35.5 36.5 37.5C38.5 44 37 51 32 57Z'/%3E%3Cpath fill='%23E8C98A' d='M32 5C36.5 12 40.5 17 40.5 23.5C40.5 29 36.8 32.5 32 32.5C27.2 32.5 23.5 29 23.5 23.5C23.5 17 27.5 12 32 5Z'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<noscript><style>#intro{display:none!important}html.has-intro{overflow:auto!important}</style></noscript>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- =====================================================================
+     LOGO SPRITE
+     <symbol id="hk-mark"> is the compact icon (lotus + diya flame with an
+     "H" cut into the petals). Colours come from CSS variables, so the same
+     symbol works as gold-on-dark and dark-on-cream.
+     Standalone, copy-ready SVG files are in the <template id="logo-source"> below.
+     ===================================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="hk-mark" viewBox="0 0 64 64">
+      <path fill="var(--m-o)" d="M31 59C17 57.5 8 49.5 5.5 37C17.5 38 26.5 44.5 31 59ZM33 59C47 57.5 56 49.5 58.5 37C46.5 38 37.5 44.5 33 59Z"/>
+      <path fill="var(--m-m)" d="M31 58C22.5 54 18 47 18.5 38C26 40.5 30 47.5 31 58ZM33 58C41.5 54 46 47 45.5 38C38 40.5 34 47.5 33 58Z"/>
+      <path fill="var(--m-c)" d="M32 57C27 51 25.5 44 27.5 37.5C29 35.5 30.5 34.5 32 34C33.5 34.5 35 35.5 36.5 37.5C38.5 44 37 51 32 57Z"/>
+      <path d="M27.5 41v11M36.5 41v11M27.5 46.5h9" fill="none" stroke="var(--m-h)" stroke-width="2.2" stroke-linecap="round"/>
+      <path fill="var(--m-f)" d="M32 5C36.5 12 40.5 17 40.5 23.5C40.5 29 36.8 32.5 32 32.5C27.2 32.5 23.5 29 23.5 23.5C23.5 17 27.5 12 32 5Z"/>
+      <path fill="var(--m-fi)" d="M32 15C34.2 18.5 35.8 20.8 35.8 24C35.8 26.6 34.2 28.3 32 28.3C29.8 28.3 28.2 26.6 28.2 24C28.2 20.8 29.8 18.5 32 15Z"/>
+      <path d="M10 61.5Q32 64 54 61.5" fill="none" stroke="var(--m-m)" stroke-width="1.2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="hk-lotus-line" viewBox="0 0 64 64">
+      <path d="M32 58C20 55 12 47 10 36C21 37 29 44 32 58ZM32 58C44 55 52 47 54 36C43 37 35 44 32 58ZM32 58C24 52 22 42 32 30C42 42 40 52 32 58Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Copy-ready standalone logos (save each <svg> block as a .svg file).
+     The wordmark uses the Playfair Display font; outline the text in Figma/Inkscape for a font-independent file. -->
+<template id="logo-source">
+  <!-- 1) GOLD ON DARK — full lockup -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 64" width="330" height="64" role="img" aria-label="Hastakala">
+    <path fill="#9E7332" d="M31 59C17 57.5 8 49.5 5.5 37C17.5 38 26.5 44.5 31 59ZM33 59C47 57.5 56 49.5 58.5 37C46.5 38 37.5 44.5 33 59Z"/>
+    <path fill="#C99A4A" d="M31 58C22.5 54 18 47 18.5 38C26 40.5 30 47.5 31 58ZM33 58C41.5 54 46 47 45.5 38C38 40.5 34 47.5 33 58Z"/>
+    <path fill="#E8C98A" d="M32 57C27 51 25.5 44 27.5 37.5C29 35.5 30.5 34.5 32 34C33.5 34.5 35 35.5 36.5 37.5C38.5 44 37 51 32 57Z"/>
+    <path d="M27.5 41v11M36.5 41v11M27.5 46.5h9" fill="none" stroke="#24140F" stroke-width="2.2" stroke-linecap="round"/>
+    <path fill="#E8C98A" d="M32 5C36.5 12 40.5 17 40.5 23.5C40.5 29 36.8 32.5 32 32.5C27.2 32.5 23.5 29 23.5 23.5C23.5 17 27.5 12 32 5Z"/>
+    <path fill="#24140F" d="M32 15C34.2 18.5 35.8 20.8 35.8 24C35.8 26.6 34.2 28.3 32 28.3C29.8 28.3 28.2 26.6 28.2 24C28.2 20.8 29.8 18.5 32 15Z"/>
+    <path d="M10 61.5Q32 64 54 61.5" fill="none" stroke="#C99A4A" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="76" y="43" font-family="'Playfair Display',Georgia,serif" font-weight="600" font-size="30" letter-spacing="6" fill="#E8C98A">HASTAKALA</text>
+  </svg>
+  <!-- 2) DARK BROWN ON CREAM — full lockup -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 64" width="330" height="64" role="img" aria-label="Hastakala">
+    <path fill="#B75D3B" d="M31 59C17 57.5 8 49.5 5.5 37C17.5 38 26.5 44.5 31 59ZM33 59C47 57.5 56 49.5 58.5 37C46.5 38 37.5 44.5 33 59Z"/>
+    <path fill="#651C32" d="M31 58C22.5 54 18 47 18.5 38C26 40.5 30 47.5 31 58ZM33 58C41.5 54 46 47 45.5 38C38 40.5 34 47.5 33 58Z"/>
+    <path fill="#24140F" d="M32 57C27 51 25.5 44 27.5 37.5C29 35.5 30.5 34.5 32 34C33.5 34.5 35 35.5 36.5 37.5C38.5 44 37 51 32 57Z"/>
+    <path d="M27.5 41v11M36.5 41v11M27.5 46.5h9" fill="none" stroke="#FFF7EC" stroke-width="2.2" stroke-linecap="round"/>
+    <path fill="#C99A4A" d="M32 5C36.5 12 40.5 17 40.5 23.5C40.5 29 36.8 32.5 32 32.5C27.2 32.5 23.5 29 23.5 23.5C23.5 17 27.5 12 32 5Z"/>
+    <path fill="#FFF7EC" d="M32 15C34.2 18.5 35.8 20.8 35.8 24C35.8 26.6 34.2 28.3 32 28.3C29.8 28.3 28.2 26.6 28.2 24C28.2 20.8 29.8 18.5 32 15Z"/>
+    <path d="M10 61.5Q32 64 54 61.5" fill="none" stroke="#651C32" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="76" y="43" font-family="'Playfair Display',Georgia,serif" font-weight="600" font-size="30" letter-spacing="6" fill="#24140F">HASTAKALA</text>
+  </svg>
+</template>
+
+<!-- =====================================================================
+     INTRO — plays YOUR video if CONFIG.intro.videoUrl is set; otherwise
+     (or if the video fails / autoplay is blocked) shows the animated logo.
+     ===================================================================== -->
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Hastakala welcome animation">
+  <div class="intro-particles" id="introParticles" aria-hidden="true"></div>
+  <div class="intro-fallback" id="introFallback">
+    <div class="intro-glow" aria-hidden="true"></div>
+    <div class="intro-lock">
+      <svg class="intro-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path class="pt m-o" style="--k:0" d="M31 59C17 57.5 8 49.5 5.5 37C17.5 38 26.5 44.5 31 59Z"/>
+        <path class="pt m-o" style="--k:0" d="M33 59C47 57.5 56 49.5 58.5 37C46.5 38 37.5 44.5 33 59Z"/>
+        <path class="pt m-m" style="--k:1" d="M31 58C22.5 54 18 47 18.5 38C26 40.5 30 47.5 31 58Z"/>
+        <path class="pt m-m" style="--k:1" d="M33 58C41.5 54 46 47 45.5 38C38 40.5 34 47.5 33 58Z"/>
+        <path class="pt m-c" style="--k:2" d="M32 57C27 51 25.5 44 27.5 37.5C29 35.5 30.5 34.5 32 34C33.5 34.5 35 35.5 36.5 37.5C38.5 44 37 51 32 57Z"/>
+        <path class="pt m-h" style="--k:2" d="M27.5 41v11M36.5 41v11M27.5 46.5h9"/>
+        <g class="fl">
+          <path class="m-f" d="M32 5C36.5 12 40.5 17 40.5 23.5C40.5 29 36.8 32.5 32 32.5C27.2 32.5 23.5 29 23.5 23.5C23.5 17 27.5 12 32 5Z"/>
+          <path class="m-fi" d="M32 15C34.2 18.5 35.8 20.8 35.8 24C35.8 26.6 34.2 28.3 32 28.3C29.8 28.3 28.2 26.6 28.2 24C28.2 20.8 29.8 18.5 32 15Z"/>
+        </g>
+        <path class="m-base" d="M10 61.5Q32 64 54 61.5"/>
+      </svg>
+      <div class="intro-word" aria-label="Hastakala"><span style="--i:0" aria-hidden="true">H</span><span style="--i:1" aria-hidden="true">A</span><span style="--i:2" aria-hidden="true">S</span><span style="--i:3" aria-hidden="true">T</span><span style="--i:4" aria-hidden="true">A</span><span style="--i:5" aria-hidden="true">K</span><span style="--i:6" aria-hidden="true">A</span><span style="--i:7" aria-hidden="true">L</span><span style="--i:8" aria-hidden="true">A</span></div>
+      <p class="intro-tag">Tradition in Every Piece</p>
+      <span class="intro-shimmer" aria-hidden="true"></span>
+    </div>
+  </div>
+  <button class="intro-skip" id="introSkip" type="button">Skip intro</button>
+</div>
+
+<!-- =====================================================================
+     HEADER
+     ===================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a class="logo" href="#home" aria-label="Hastakala — home">
+      <svg aria-hidden="true"><use href="#hk-mark"/></svg>
+      <span class="logo-word">HASTAKALA</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Collections</a>
+      <a href="#story">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#shop" class="menu-search" data-focus-search>Search products</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn btn-search" type="button" id="btnSearch" aria-label="Search products"><span data-icon="search"></span></button>
+      <button class="icon-btn" type="button" id="btnWish" aria-label="Wishlist, 0 items"><span data-icon="heart"></span><span class="badge" id="wishCount" data-n="0">0</span></button>
+      <button class="icon-btn" type="button" id="btnCart" aria-label="Shopping bag, 0 items"><span data-icon="bag"></span><span class="badge" id="cartCount" data-n="0">0</span></button>
+      <button class="icon-btn burger" type="button" id="btnMenu" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span data-icon="menu"></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- =====================================================================
+     HERO
+     IMAGE SLOTS: replace IMAGES.hero / IMAGES.heroArch in the script with your own photos.
+     ===================================================================== -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="hero-bg" data-parallax="0.14" id="heroBg"></div>
+  <div class="hero-shade"></div>
+  <div class="bokeh" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="particles" id="heroParticles" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="hero-tag">Handmade with Love</p>
+      <h1 id="heroTitle">Make Every Celebration Special.</h1>
+      <p class="lead">Thoughtfully crafted festive essentials and heartfelt gifts, made to turn ordinary moments into beautiful memories.</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="#shop">Explore Collection <span data-icon="arrow"></span></a>
+        <a class="btn btn-ghost" href="#story">Discover Our Story</a>
+      </div>
+    </div>
+    <div class="arch-wrap" data-parallax="-0.04" id="archWrap">
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor">
+        <circle cx="100" cy="100" r="97" stroke-width="1" stroke-dasharray="1 7" stroke-linecap="round"/>
+        <circle cx="100" cy="100" r="90" stroke-width=".6"/>
+        <g fill="currentColor" stroke="none"><circle cx="100" cy="3" r="2.4"/><circle cx="197" cy="100" r="2.4"/><circle cx="100" cy="197" r="2.4"/><circle cx="3" cy="100" r="2.4"/></g>
+      </svg>
+      <div class="arch-frame"><div class="arch-img ph" id="archImg"></div></div>
+      <svg class="diya-deco" viewBox="0 0 120 90" aria-hidden="true">
+        <defs><linearGradient id="bowl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8C98A"/><stop offset="1" stop-color="#9E7332"/></linearGradient></defs>
+        <g class="flame"><path fill="#F6D58E" d="M60 6C68 21 72 29 72 38C72 46 66 51 60 51C54 51 48 46 48 38C48 29 52 21 60 6Z"/><path fill="#E08A3C" d="M60 24C64 31 66 35 66 39C66 43 63 45.500 60 45.500C57 45.500 54 43 54 39C54 35 56 31 60 24Z"/></g>
+        <path fill="url(#bowl)" d="M8 52Q60 104 112 52Q60 62 8 52Z"/>
+        <ellipse cx="60" cy="52" rx="52" ry="5" fill="#C99A4A"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SHOP BY CATEGORY
+     ===================================================================== -->
+<section class="sec" id="categories" aria-labelledby="catTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="catTitle">Shop by category</h2>
+      <p>From festive thalis to wedding favours, find what your celebration needs.</p>
+      <div class="orn" aria-hidden="true"><svg><use href="#hk-lotus-line"/></svg></div>
+    </div>
+    <div class="cats" id="catGrid"></div>
+    <div class="cat-more"><button class="btn btn-line" type="button" id="catToggle" aria-expanded="false">View All Categories</button></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FEATURED PRODUCTS + SEARCH / FILTER / SORT
+     ===================================================================== -->
+<section class="sec sec-cream" id="shop" aria-labelledby="shopTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="shopTitle">Featured products</h2>
+      <p>Search, filter and add your favourites to the bag.</p>
+      <span class="note">Sample catalog: prices, ratings and photos are illustrative demo data until real products are added.</span>
+    </div>
+    <div class="shop-tools">
+      <div class="search-box">
+        <span data-icon="search"></span>
+        <label class="sr-only" for="q">Search products by name or category</label>
+        <input id="q" type="search" placeholder="Search diyas, hampers, torans…" autocomplete="off" enterkeyhint="search">
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      <div class="tools-row">
+        <p class="result-info" id="resultInfo" aria-live="polite"></p>
+        <label class="sort">Sort by
+          <select id="sort">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+      <div class="active-filters" id="activeFilters" hidden></div>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FESTIVE BANNER
+     ===================================================================== -->
+<section class="banner zoom-in" aria-labelledby="bannerTitle">
+  <div class="banner-media ph" id="bannerImg"></div>
+  <div class="wrap">
+    <h2 id="bannerTitle">Celebrate Traditions with Hastakala.</h2>
+    <p>Beautiful little details. Meaningful celebrations.</p>
+    <button class="btn btn-gold" type="button" data-occ="festivals">Explore Festive Collection <span data-icon="arrow"></span></button>
+  </div>
+</section>
+
+<!-- =====================================================================
+     WHY CHOOSE
+     ===================================================================== -->
+<section class="sec" aria-labelledby="whyTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="whyTitle">Why choose Hastakala</h2>
+      <p>Small details, chosen with care, for the moments you want to remember.</p>
+      <div class="orn" aria-hidden="true"><svg><use href="#hk-lotus-line"/></svg></div>
+    </div>
+    <div class="why">
+      <article class="why-card reveal"><div class="why-ico"><span data-icon="sparkles"></span></div><h3>Thoughtfully Curated</h3><p>Every piece is chosen for how it looks, feels and fits a celebration.</p></article>
+      <article class="why-card reveal" style="--d:80ms"><div class="why-ico"><span data-icon="heart"></span></div><h3>Handcrafted with Care</h3><p>We favour handcrafted detail and traditional artistry wherever we can.</p></article>
+      <article class="why-card reveal" style="--d:160ms"><div class="why-ico"><span data-icon="calendar"></span></div><h3>Gifts for Every Occasion</h3><p>Festivals, weddings, birthdays and housewarmings, all in one place.</p></article>
+      <article class="why-card reveal" style="--d:240ms"><div class="why-ico"><span data-icon="gift"></span></div><h3>Beautifully Presented</h3><p>Gift-ready packaging so what you give feels as special as what's inside.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     SHOP BY OCCASION
+     ===================================================================== -->
+<section class="sec sec-cream" id="occasions" aria-labelledby="occTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="occTitle">Shop by occasion</h2>
+      <p>Pick the moment and we'll show you pieces that suit it.</p>
+    </div>
+    <div class="occ" id="occGrid"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PERSONALISED GIFTS
+     ===================================================================== -->
+<section class="sec" id="personalized" aria-labelledby="persTitle">
+  <div class="wrap split">
+    <div class="reveal">
+      <h2 id="persTitle">Gifts made personal</h2>
+      <p class="lead2">Tell us who it's for and what you have in mind. We'll suggest a gift built around the person, the occasion and your budget.</p>
+      <ul class="offers">
+        <li><div class="why-ico"><span data-icon="gift"></span></div><div><h3>Custom hampers</h3><p>Choose a theme and favourites; we'll arrange them together.</p></div></li>
+        <li><div class="why-ico"><span data-icon="sparkles"></span></div><div><h3>Customised gift boxes</h3><p>A box with a name, a message or a colour story of your choice.</p></div></li>
+        <li><div class="why-ico"><span data-icon="heart"></span></div><div><h3>Celebration bundles</h3><p>Return gifts and festive sets for a family, an office or a guest list.</p></div></li>
+      </ul>
+      <button class="btn btn-wine" type="button" data-open="giftDialog">Create Your Gift <span data-icon="arrow"></span></button>
+    </div>
+    <div class="collage reveal" style="--d:120ms" id="collage"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     BRAND STORY  (replace the copy with your own story when ready)
+     ===================================================================== -->
+<section class="sec story" id="story" aria-labelledby="storyTitle">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <div class="story-logo logo logo--dark" aria-hidden="true" style="display:flex"><svg><use href="#hk-mark"/></svg><span class="logo-word">HASTAKALA</span></div>
+      <h2 id="storyTitle">Crafted with Love. Inspired by Tradition.</h2>
+      <p class="lead2">Hastakala brings together festive charm, thoughtful gifting and beautiful decorative details. From the glow of a diya to the colour of a marigold toran, we believe the little things are what make a celebration feel like home.</p>
+      <p class="lead2" style="margin-top:-8px">Whether you're lighting up a doorway, planning a wedding table or choosing a gift that says more than words, we're here to help you do it with warmth and tradition.</p>
+      <p class="sign">Handmade with Love</p>
+    </div>
+    <div class="collage reveal" style="--d:120ms" id="storyCollage"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     REVIEWS — SAMPLE DATA (edit SAMPLE_REVIEWS in the script)
+     ===================================================================== -->
+<section class="sec" id="reviews" aria-labelledby="revTitle">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 id="revTitle">Kind words</h2>
+      <p>What celebrations with Hastakala could feel like.</p>
+      <span class="note">Sample testimonials for design preview only. Replace them with real customer reviews before launch.</span>
+    </div>
+    <div class="reviews" id="reviewList" tabindex="0" aria-label="Customer reviews"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     NEWSLETTER
+     ===================================================================== -->
+<section class="sec news" aria-labelledby="newsTitle">
+  <div class="wrap">
+    <h2 id="newsTitle">Festive updates, in your inbox</h2>
+    <p class="sub">New collections, festival gift ideas and early looks at what we're making.</p>
+    <form class="news-form js-news" novalidate>
+      <div class="row">
+        <div style="flex:1">
+          <label class="sr-only" for="newsEmail1">Email address</label>
+          <input id="newsEmail1" type="email" name="email" placeholder="Your email address" autocomplete="email" inputmode="email" aria-describedby="newsErr1">
+          <p class="err" id="newsErr1" role="alert"></p>
+        </div>
+        <button class="btn btn-gold" type="submit">Subscribe</button>
+      </div>
+      <div class="status" role="status" hidden></div>
+    </form>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CONTACT + ORDER INQUIRY
+     ===================================================================== -->
+<section class="sec sec-cream" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap contact">
+    <div class="reveal">
+      <h2 id="contactTitle">Order inquiry &amp; contact</h2>
+      <p class="lead2" style="margin-top:14px">Ask about a product, a bulk order or something custom. We'll reply as soon as we can.</p>
+      <ul class="info" id="contactInfo"></ul>
+      <div class="socials" id="contactSocials" style="color:var(--espresso)"></div>
+    </div>
+    <form class="card-form reveal" id="contactForm" novalidate style="--d:100ms">
+      <div class="field-row">
+        <div class="field"><label for="cName">Name</label><input id="cName" name="name" data-req="text" autocomplete="name" aria-describedby="cNameE"><span class="err" id="cNameE" role="alert"></span></div>
+        <div class="field"><label for="cContact">Email or phone</label><input id="cContact" name="contact" data-req="contact" autocomplete="email" aria-describedby="cContactE"><span class="err" id="cContactE" role="alert"></span></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="cProduct">Product of interest</label><select id="cProduct" name="product" data-req="text"></select><span class="err" role="alert"></span></div>
+        <div class="field"><label for="cQty">Quantity</label><input id="cQty" name="quantity" type="number" min="1" max="999" value="1" inputmode="numeric" data-req="qty" aria-describedby="cQtyE"><span class="err" id="cQtyE" role="alert"></span></div>
+      </div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" name="message" placeholder="Occasion, date needed, colours, budget…"></textarea><span class="err" role="alert"></span></div>
+      <div class="status" id="contactStatus" role="status" hidden></div>
+      <div class="btn-row">
+        <button class="btn btn-dark" type="submit" data-via="send">Send inquiry</button>
+        <button class="btn btn-line" type="submit" data-via="whatsapp"><span data-icon="chat"></span> Inquire on WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="site-footer">
+  <svg class="orn-bg" aria-hidden="true"><use href="#hk-lotus-line"/></svg>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#home" aria-label="Hastakala — back to top"><svg aria-hidden="true"><use href="#hk-mark"/></svg><span class="logo-word">HASTAKALA</span></a>
+        <p class="foot-tag">Tradition in Every Piece</p>
+        <p class="foot-small">Festive essentials and heartfelt gifts, made to turn ordinary moments into beautiful memories.</p>
+        <div class="socials" id="footSocials"></div>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li><li><a href="#shop">Shop</a></li><li><a href="#categories">Collections</a></li><li><a href="#story">About Us</a></li><li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Categories</h3>
+        <ul id="footCats"></ul>
+      </div>
+      <div>
+        <h3>Stay in touch</h3>
+        <ul class="info" id="footContact" style="margin-bottom:18px"></ul>
+        <form class="news-form js-news" novalidate>
+          <label class="sr-only" for="newsEmail2">Email address</label>
+          <input id="newsEmail2" type="email" name="email" placeholder="Your email address" autocomplete="email" inputmode="email" aria-describedby="newsErr2">
+          <p class="err" id="newsErr2" role="alert"></p>
+          <button class="btn btn-gold btn-sm" type="submit" style="margin-top:6px">Subscribe</button>
+          <div class="status" role="status" hidden></div>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year"></span> Hastakala. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <button type="button" data-legal="privacy">Privacy Policy</button>
+        <button type="button" data-legal="terms">Terms &amp; Conditions</button>
+        <button type="button" id="replayIntro">Replay intro</button>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================================
+     DIALOGS (native <dialog>: focus trap + Esc handled by the browser)
+     ===================================================================== -->
+<dialog class="drawer" id="cartDrawer" aria-labelledby="cartTitle">
+  <div class="dlg-head"><h2 id="cartTitle">Your bag</h2><button class="icon-btn" type="button" data-close aria-label="Close bag"><span data-icon="x"></span></button></div>
+  <div class="dlg-body" id="cartBody"></div>
+  <div class="dlg-foot" id="cartFoot"></div>
+</dialog>
+
+<dialog class="drawer" id="wishDrawer" aria-labelledby="wishTitle">
+  <div class="dlg-head"><h2 id="wishTitle">Wishlist</h2><button class="icon-btn" type="button" data-close aria-label="Close wishlist"><span data-icon="x"></span></button></div>
+  <div class="dlg-body" id="wishBody"></div>
+</dialog>
+
+<dialog class="modal" id="giftDialog" aria-labelledby="giftTitle">
+  <div class="dlg-head"><h2 id="giftTitle">Create your gift</h2><button class="icon-btn" type="button" data-close aria-label="Close"><span data-icon="x"></span></button></div>
+  <form class="dlg-body" id="giftForm" novalidate>
+    <p style="margin-bottom:16px">Tell us a little and we'll get back with ideas.</p>
+    <div class="field-row">
+      <div class="field"><label for="gName">Your name</label><input id="gName" name="name" data-req="text" autocomplete="name" aria-describedby="gNameE"><span class="err" id="gNameE" role="alert"></span></div>
+      <div class="field"><label for="gContact">Email or phone</label><input id="gContact" name="contact" data-req="contact" autocomplete="email" aria-describedby="gContactE"><span class="err" id="gContactE" role="alert"></span></div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label for="gOcc">Occasion</label>
+        <select id="gOcc" name="occasion" data-req="text" aria-describedby="gOccE"><option value="">Choose an occasion</option></select><span class="err" id="gOccE" role="alert"></span></div>
+      <div class="field"><label for="gBudget">Budget</label>
+        <select id="gBudget" name="budget" data-req="text" aria-describedby="gBudgetE">
+          <option value="">Choose a budget</option><option>Under ₹1,000</option><option>₹1,000 – ₹2,500</option><option>₹2,500 – ₹5,000</option><option>₹5,000 and above</option>
+        </select><span class="err" id="gBudgetE" role="alert"></span></div>
+    </div>
+    <fieldset class="field"><legend>Preferred products</legend><div class="checks" id="gPrefs"></div></fieldset>
+    <div class="field"><label for="gNotes">Anything else?</label><textarea id="gNotes" name="notes" placeholder="Recipient, colours, a message to include…"></textarea></div>
+    <div class="status" id="giftStatus" role="status" hidden></div>
+    <div class="btn-row">
+      <button class="btn btn-dark" type="submit" data-via="send">Send request</button>
+      <button class="btn btn-line" type="submit" data-via="whatsapp"><span data-icon="chat"></span> WhatsApp</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog class="modal" id="checkoutDialog" aria-labelledby="coTitle">
+  <div class="dlg-head"><h2 id="coTitle">Order summary</h2><button class="icon-btn" type="button" data-close aria-label="Close"><span data-icon="x"></span></button></div>
+  <div class="dlg-body" id="coBody"></div>
+</dialog>
+
+<dialog class="modal" id="legalDialog" aria-labelledby="legalTitle">
+  <div class="dlg-head"><h2 id="legalTitle">Policy</h2><button class="icon-btn" type="button" data-close aria-label="Close"><span data-icon="x"></span></button></div>
+  <div class="dlg-body legal" id="legalBody"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
